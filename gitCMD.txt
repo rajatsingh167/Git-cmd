@@ -1,0 +1,67 @@
+
+Initialization 
+
+local repository 
+git init 
+
+shared repo
+git init pack
+
+
+git pull== > git fetch + git merge 
+git status
+git log
+git branch 
+git branch -r
+git push
+git add
+git commit
+
+ctrl +L  ==> clear screen
+
+
+For Shared repo creation 	: = $ git init shared-repo.git --bare  // Add .git to folder for share repo creation 
+for Local repo Creation  	: = git init local-repo
+for chechking the status 	: = git status
+for Cheching Log	 	: = git log 
+For chechking the Branch 	: = git Branch 
+for Adding A abc.file in git 	: = git add abc.file
+for commiting the file in git 	: = git  commit -m "initial commit "
+for checking the remote 	: = git remote -v
+for connecting to remote 	: = git remote add orgin <<shared repo url >>
+For Adding in remote		: =  git push orgin master
+
+
+
+
+
+
+
+
+
+git init	: Initializes a git repository – creates the initial ‘.git’ directory in a new or 
+		  in an existing project. 
+
+git clone	: Makes a Git repository copy from a remote source. Also adds the original 
+		  location as a remote so you can fetch from it again and push to it if you have permissions.
+		  Example: git clone <<git URl>>.
+
+git add		: Adds files changes in your working directory to your index. 
+		  Example: git add .
+
+git rm		: Removes files from your index and your working directory so they will not be tracked.
+		  Example: git rm filename.
+
+git commit	: Takes all of the changes written in the index, creates a new commit object pointing to 
+		  it and sets the branch to point to that new commit. Examples: git commit -m ‘committing
+     		  added changes’ git commit -a -m ‘committing all changes, equals to git add and git commit’
+
+git status	: Shows you the status of files in the index versus the working directory. It will list 
+		  out files that are untracked (only in your working directory), modified (tracked but not 
+		  yet updated in your index), and staged (added to your index and ready for committing). 
+		  Example: git status # On branch master # # Initial commit # # Untracked files: # 
+		  (use "git add <file>..." to include in what will be committed) # # README nothing added 
+		  to commit but untracked files present (use "git add" to track)
+
+
+
